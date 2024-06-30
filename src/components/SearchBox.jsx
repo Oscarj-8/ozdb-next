@@ -12,11 +12,11 @@ function SearchBox() {
 
   return (
     <form
-      className="flex max-w-7xl mx-auto items-center justify-between gap-2"
+      className="flex max-w-7xl mx-auto items-center gap-2 mt-6"
       onSubmit={handleSubmit}
     >
       <input
-        className="w-full p-4 h-14 rounded-md placeholder:text-gray-500 outline-none bg-transparent flex-1"
+        className="border p-4 h-10 border-[#282828] shadow-sm shadow-[#282828] rounded-md placeholder:text-gray-500 outline-none bg-transparent "
         type="text"
         placeholder="Search keywords..."
         value={search}
@@ -24,7 +24,7 @@ function SearchBox() {
       />
       <button
         disabled={!search}
-        className="text-white h-fit disabled:opacity-70 bg-sky-500 px-4 py-2 rounded-md font-medium"
+        className="text-white  disabled:opacity-70 bg-sky-500 px-4 py-2 rounded-md font-medium"
       >
         Search
       </button>
