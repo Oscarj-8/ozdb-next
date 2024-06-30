@@ -1,4 +1,3 @@
-import { Pragati_Narrow } from "next/font/google";
 import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 export default async function MoviePage({ params }) {
