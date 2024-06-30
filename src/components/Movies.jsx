@@ -1,12 +1,11 @@
 import React from "react";
+import MovieCard from "./MovieCard";
 
 export default function Movies({ results }) {
   return (
-    <div>
+    <div className="w-full place-items-center sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 max-w-7xl gap-4 mx-auto py-4">
       {results.map((movie) => (
-        <div key={movie.id}>
-          <h2>{movie.original_title}</h2>
-        </div>
+        <MovieCard key={movie.id} movie={movie} />
       ))}
     </div>
   );

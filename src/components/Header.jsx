@@ -5,7 +5,7 @@ import { BsFillInfoCircleFill } from "react-icons/bs";
 import Darkmode from "./Darkmode";
 const Header = () => {
   return (
-    <div className="flex items-center justify-between p-4 max-w-6xl mx-auto">
+    <div className="flex items-center justify-between p-4 max-w-7xl mx-auto">
       <div className="flex gap-4 ">
         <MenuItem title="home" address="/" Icon={AiFillHome} />
         <MenuItem title="about" address="/about" Icon={BsFillInfoCircleFill} />
