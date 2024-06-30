@@ -6,13 +6,11 @@ export default function MovieCard({ movie }) {
   return (
     <div
       className="group cursor-pointer sm:hover:shadow-slate-400 sm:shadow-md rounded-lg sm:border sm:border-slate-400 sm:m-2 trasit 
-    duration-200 overflow-hidden w-full max-w-[30em]"
+    duration-200 overflow-hidden w-full max-w-[30em] max-h-fit"
     >
       <Link href={`/movie/${movie.id}`}>
         <Image
-          src={`https://image.tmdb.org/t/p/original${
-            movie.backdrop_path || movie.poster_path
-          }`}
+          src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`}
           alt={movie.title}
           width={500}
           height={300}

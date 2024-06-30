@@ -8,7 +8,6 @@ export default async function MoviePage({ params }) {
   );
 
   const movie = await resp.json();
-  console.log(movie);
 
   return (
     <div className="w-full">
